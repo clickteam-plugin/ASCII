@@ -1,0 +1,235 @@
+/*
+ * Copyright 2009-2013 Olivier WENGER
+ *     http://www.magicspark.org/ or http://oulydev.free.fr/
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "..\..\inc\ccx.h"
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#ifndef _DEBUG
+#define _EXT_FILEFLAGS_DEBUG (0)
+#else
+#define _EXT_FILEFLAGS_DEBUG (VS_FF_DEBUG)
+#endif
+#define EXT_FILEFLAGS (_EXT_FILEFLAGS_DEBUG)
+
+1 VERSIONINFO
+ FILEVERSION 1,0,1,0
+ PRODUCTVERSION 1,0,1,0
+ FILEFLAGSMASK 0x0L
+ FILEFLAGS EXT_FILEFLAGS
+ FILEOS 0x10001L
+ FILETYPE VFT_DLL
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+#ifndef RUN_ONLY
+            VALUE "Comments", "MMF's edittime version\0"
+#endif
+            VALUE "CompanyName", "MagicSpark.org\0"
+#ifndef RUN_ONLY
+            VALUE "FileDescription", "char to int and int to char conversion.\0"
+#else
+            VALUE "FileDescription", "\0"
+#endif
+            VALUE "FileVersion", "1.0.1\0"
+            VALUE "InternalName", "ASCII\0"
+            VALUE "LegalCopyright", "Copyright © 2009-2013 WENGER Olivier\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ascii.mfx\0"
+#if EXT_FILEFLAGS & VS_FF_PRIVATEBUILD
+            VALUE "PrivateBuild", "Private build\0"
+#endif
+            VALUE "ProductName", "ASCII\0"
+            VALUE "ProductVersion", "1.0.1\0"
+#if EXT_FILEFLAGS & VS_FF_SPECIALBUILD
+            VALUE "SpecialBuild", "Special build\0"
+#endif
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+KPX_MAGICNUMBER RCDATA MOVEABLE PURE 
+BEGIN
+    0x2516, 0x5908
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_ICON$(EDITOR)       BITMAP  MOVEABLE PURE   "RES\\EXT_ICON_IMG.BMP"
+#else
+EXO_ICON                BITMAP  MOVEABLE PURE   "RES\\EXT_ICON_IMG.BMP"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_IMAGE$(EDITOR)      BITMAP  MOVEABLE PURE   "RES\\EXT_ICON_IMG.BMP"
+#else
+EXO_IMAGE               BITMAP  MOVEABLE PURE   "RES\\EXT_ICON_IMG.BMP"
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_EXPRESSIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_EXPRESSIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "char2int(unsigned char)", EXP_IDMN_CHAR2INT
+        MENUITEM "int2char$(integer)", EXP_IDMN_INT2CHAR
+        MENUITEM SEPARATOR
+    END
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""..\\..\\Inc\\ccx.h""\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    KPX_MARK                "MF2"
+    KPX_NAME                "ASCII"
+END
+
+#ifndef RUN_ONLY
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EXP_IDS_CHAR2INT		"char2int("
+    EXP_IDS_INT2CHAR		"int2char$("
+END
+#endif /* RUN_ONLY */
+
+#ifndef RUN_ONLY
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDST_OBJNAME            "ASCII"
+    IDST_AUTHOR             "MagicSpark.org - WENGER Olivier"
+    IDST_COPYRIGHT          "Copyright © 2009-2013 WENGER Olivier"
+    IDST_COMMENT            "unsigned char to int and int to char conversion."
+    IDST_HTTP               "http://www.magicspark.org/"
+END
+#endif /* RUN_ONLY */
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+/* END OF FILE */
